@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <table bgcolor="yellow" border="20px" align="center">
+        <tr>
+     <td>
+        <label for="email">Email:</label>
+    </td>
+    <td><input type="email" id="email" name="email" required></td>
+<tr>
+        <td><label for="phoneNumber">Phone Number:</label></td>
+        <td><input type="text" id="phoneNumber" name="phoneNumber" required></td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            <button type="submit">Submit</button>
+        </td>
+    </tr>
+    </form>
+
+    <script>
+        function validateForm() {
+            const email = document.getElementById("email").value;
+            const phoneNumber = document.getElementById("phoneNumber").value;
+
+            // Validate Email
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                alert("Invalid email format. It should follow the pattern: name@domain.com.");
+                return false;
+            }
+
+            // Validate Phone Number
+            const phonePattern = /^[0-9]{10}$/;
+            if (!phonePattern.test(phoneNumber)) {
+                alert("Phone number must contain exactly 10 digits.");
+                return false;
+            }
+
+            alert("Validation successful!");
+            return true;
+        }
+    </script>
+</body>
+</html>

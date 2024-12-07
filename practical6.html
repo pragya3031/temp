@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        body{
+            background-image: url("https://npf-unlayer.s3.ap-south-1.amazonaws.com/unlayer/images/1648792720925-engineeringbbannerimage.png");
+            backdrop-filter: blur(1.5px); /* Slightly reduced blur */
+            -webkit-backdrop-filter: blur(3px);
+        }
+        .heading{
+            text-align: center;
+            font-size: 30px;
+        }
+        .upelement{
+            margin-top: 10px;
+            border: 1.5px solid black;
+            max-width: 700px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 25px black;
+            border: 1px solid white;
+        }
+        .childhead{
+            font-size: 26px;
+        }
+        .discript{
+            font-size: 20px;
+        }
+        .btn button{
+            margin-bottom: 10px;
+            font-size: 17.5px;
+            border-radius: 5px;
+            background-color: #FF9900;
+        }
+
+        .btn button:hover{
+            background-color: white;
+            transform: translateY(-2px);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1 class="heading">Welcome to ABES Engineering college.</h1>
+        <div class="upelement">
+            <h2 class="childhead">Department of Computer Science.</h2>
+            <p class="discript">Welcome to the Department of Computer Science and Engineering at ABES Engineering College, 
+                where innovation meets excellence in the ever-evolving field of technology. Our 
+                department is dedicated to providing students with a strong foundation in computer 
+                science principles, software engineering practices, and cutting-edge research to prepare
+                 them for successful careers in the global tech landscape.</p>
+            <a href="https://abes.ac.in/computer-science-engineering.php" class="btn"><button>Know More !</button></a>
+        </div>
+    </section>
+</body>
+</html>

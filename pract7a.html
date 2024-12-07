@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Background Repeat Example</title>
+    <style>
+        .repeat {
+            background-image: url('codechef.jpg');
+            background-repeat: repeat;
+            height: 200px;
+            width: 400px;
+            border: 2px solid #000;
+            
+        }
+
+        .repeat-x {
+            background-image: url('codechef.jpg');
+            background-repeat: repeat-x;
+            height: 200px;
+            width: 400px;
+            border: 2px solid #000;
+           
+        }
+
+        .repeat-y {
+            background-image: url('codechef.jpg');
+            background-repeat: repeat-y;
+            height: 200px;
+            width: 400px;
+            border: 2px solid #000;
+            
+        }
+
+        .no-repeat {
+            background-image: url('codechef.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; /* Adjust to fit container */
+            height: 200px;
+            width: 400px;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h2 align="center">CSS Background Repeat Examples</h2>
+    <h2>repeat</h2><div class="repeat"></div>
+    <h2>repeat-x</h2><div class="repeat-x"></div>
+    <h2>repeat-y</h2><div class="repeat-y"></div>
+    <h2>no-repeat</h2><div class="no-repeat"></div>
+</body>
+</html>
